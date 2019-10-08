@@ -6,7 +6,7 @@
     "start": "webpack-dev-server --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "clean": "rm -rf dist/* && rm -rf node_modules/",
-    "patchup": "rm -rf src/patch/* && cables -c -i -d 'src/patch' -e Yk1FlI"
+    "patchup": "rm -rf src/patch/* && cables -c -i -d 'src/patch' -e ##patchId##"
   },
   "repository": {
     "type": "git",
