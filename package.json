@@ -1,0 +1,48 @@
+{
+  "name": "cables-webpack-skeleton",
+  "version": "0.0.1",
+  "description": "a minimal webpack configuration skeleton for patches made with cables.gl",
+  "scripts": {
+    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "clean": "rm -rf dist/* && rm -rf node_modules/",
+    "patchup": "rm -rf src/patch/* && cables -c -i -d 'src/patch' -e Yk1FlI"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/undev-studio/cables-webpack-skeleton.git"
+  },
+  "keywords": [],
+  "author": "undefined development <hi@undev.de>",
+  "license": "MIT",
+  "homepage": "https://github.com/undev-studio/cables-webpack-skeleton#readme",
+  "devDependencies": {
+    "@cables/cables": "0.3.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.0.4",
+    "css-loader": "3.2.0",
+    "file-loader": "^4.2.0",
+    "mini-css-extract-plugin": "0.8.0",
+    "node-sass": "4.12.0",
+    "sass-loader": "8.0.0",
+    "webpack": "4.40.2",
+    "webpack-cli": "3.3.9",
+    "webpack-dev-server": "^3.8.1",
+    "webpack-merge": "^4.2.2"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

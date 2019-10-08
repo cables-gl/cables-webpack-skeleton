@@ -1,0 +1,23 @@
+@import "settings";
+@import "screen";
+
+body {
+  margin: 0;
+  background-color: $primary-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  user-select: none;
+  font-weight: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:focus, :active, :hover {
+  outline: none;
+}
+
+canvas {
+  display: block;
+}
